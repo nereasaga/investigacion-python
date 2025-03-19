@@ -1,9 +1,13 @@
 # MÉTODOS EN CADENAS
-texto = "Hola, mundo!"
+texto = "hola, mundo!"
 
 # find(x)	Devuelve la posición donde aparece x
 texto.find("mundo")    # 6  
 print(texto.find("mundo"))    
+
+# capitalize()	Convierte la primera letra en mayúscula
+texto.capitalize()
+print(texto.capitalize())    # Hola, mundo!
 
 # split(x)	Divide la cadena en una lista según x
 texto.split(", ")
