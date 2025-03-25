@@ -22,11 +22,13 @@ numeros = [1, 2, 3]
 print(list(map(lambda x: x**2, numeros)))  # [1, 4, 9]
 
 # filter(): Filtra elementos de una lista
+numeros = [1, 2, 3]
 pares = list(filter(lambda x: x % 2 == 0, numeros))
 print(pares)  # [2]
 
 # reduce(): Reduce la lista a un solo valor
 from functools import reduce
+numeros = [1, 2, 3]
 suma = reduce(lambda x, y: x + y, numeros)
 print(suma)  # 6
 
@@ -60,3 +62,23 @@ def cuadrado(n):
 
 resultado = cuadrado(4)
 print(resultado)  # 16
+print(cuadrado(4))
+
+# Funciones con un parametro por defecto
+def saludar(nombre, mensaje="Hola"):
+    print(f"{mensaje}, {nombre}!")
+
+# Llamadas a la función
+saludar("Ane")             # Usa el valor por defecto de "mensaje"
+saludar("Jon", "Hello") # Sobrescribe el valor por defecto
+
+
+# Funciones con parámetros con valores por defecto
+def crear_usuario(nombre="Invitado", edad=18, pais="España"):
+    print(f"Nombre: {nombre}, Edad: {edad}, País: {pais}")
+
+# Llamadas a la función
+crear_usuario()                           # Usa todos los valores por defecto
+crear_usuario("Lucía")                    # Cambia solo el nombre
+crear_usuario("Mikel", 25)               # Cambia nombre y edad
+crear_usuario("Elena", 30, "México")      # Cambia todos los valores

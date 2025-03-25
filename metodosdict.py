@@ -34,5 +34,7 @@ diccionario.clear()
 print(diccionario)  # {}
 
 # reversed()	Invierte el orden de las claves
-diccionario = {"nombre": "Ane", "edad": 30} # Restaurar el diccionario
+diccionario = {"nombre": "Ane", "edad": 30} # Restauramos el diccionario
 print(dict(reversed(diccionario.items())))  # {'edad': 30, 'nombre': 'Ane'}
+
+

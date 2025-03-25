@@ -27,7 +27,6 @@ print(lista)  # [1, 2, 3, 4, 2, 2, 5]
 lista.sort()
 print(lista)  # [1, 2, 2, 2, 3, 4, 5]
 
-
 # reverse()	Invierte el orden de la lista
 lista.reverse()
 print(lista)  # [5, 4, 3, 2, 2, 2, 1]
@@ -55,3 +54,4 @@ texto = "Estoy usando Python"
 print(texto[0:6])   # 'Estoy ' (Primeros 6 caracteres)
 print(texto[-6:])   # 'Python' (Últimos 6 caracteres)
 print(texto[::-1])  # 'nohtyP gnisua yotsE' (Invertir el texto)
+
