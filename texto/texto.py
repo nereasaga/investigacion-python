@@ -1,3 +1,5 @@
+# TXT
+
 with open ('texto.txt', 'r') as f:
     texto = f.read()    
     print(texto)   
@@ -8,6 +10,9 @@ with open ('texto.txt', 'a', encoding="utf-8") as f:
 with open ('texto.txt', 'r') as f:
     texto = f.read()    
     print(texto)   
+
+
+# CSV
 
 import csv
 
@@ -27,6 +32,8 @@ with open('ejemplo.csv', 'r') as ejemplo:
     for linea in csv_reader:
         print(linea)
 
+
+# JSON
 
 import json
 
